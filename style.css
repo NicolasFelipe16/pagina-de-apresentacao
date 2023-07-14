@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root{
-    --color-1: #000000;
-    --color-2: #EEEEEE;
-    --color-3: #05BFDB;
+    --color-1: rgb(0, 0, 20);
+    --color-2: #ffffff;
+    --color-3: rgb(0, 140, 255);
 
     --font-1: 'Krona One', sans-serif;
     --font-2: 'Montserrat', sans-serif;;
@@ -24,7 +24,11 @@ body{
 }
 
 .header{
-    padding: 30px 0 0 12.5%;
+    padding: 30px 0;
+    padding-left: 10%;
+    width: 100%;
+    background-color: var(--color-1);
+    position: fixed;
 }
 
 .header__links{
@@ -45,13 +49,13 @@ body{
 }
 
 
-strong{color: var(--color-3);}
-.link-plataformas{color: var(--color-3);text-decoration: none;}
+spam{color: var(--color-3);}
+.link-plataformas{color: var(--color-3); font-weight: bold;text-decoration: none;}
 
 .link-plataformas:hover{color: var(--color-2); font-weight: bold;}
 
 .container{
-    padding: 10% 10%;
+    padding: 0 10% 10%;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -61,14 +65,20 @@ strong{color: var(--color-3);}
 #section-one{
     display: flex;
     flex-direction: row;
-    margin-top: 0;
+}
+
+.container__image{
+    height: 100%;
+    width: 35%;
+    border-radius: 20px;
+    margin: 0 0 0 50px;
 }
 
 .container__content{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 10% 0 5% 0;
+    margin: 5% 0 0 0;
 }
 
 .container__content__texts{
@@ -80,7 +90,11 @@ strong{color: var(--color-3);}
 .container__content__title{
     font-size: 1.5rem;
     font-family: var(--font-1);
-    margin-top: 20px;
+}
+
+.container__content__title, .container__image{
+    margin-top: 15vh;
+
 }
 
 .container__content__text{
@@ -123,13 +137,6 @@ strong{color: var(--color-3);}
     box-shadow: 0px 0px 10px 0px var(--color-3);
 }
 
-.container__image{
-    height: 100%;
-    width: 35%;
-    border-radius: 20px;
-    margin: 20px 0 0 50px;
-}
-
 .footer{
     background-color: var(--color-3);
     color: var(--color-1);
@@ -142,15 +149,12 @@ strong{color: var(--color-3);}
 @media (max-width: 1100px){
     .container__image{
         width: 40%;
-        margin: 0 20%;
+        margin: auto;
+        margin-top: 15vh;
     }
 
     #section-one{
         flex-direction: column-reverse;
-    }
-
-    .container__content__title{
-        margin-top: 10%;
     }
 
     #section-one .container__content__title{
@@ -183,6 +187,9 @@ strong{color: var(--color-3);}
     .container__image {
         width: 100%;
         margin: 0;
+    }
+    .container__content__title, .container__image{
+        margin-top: 40vh;
     }
     .container__content__links__link {
         width: 100%;

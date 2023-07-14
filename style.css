@@ -40,10 +40,6 @@ body{
     text-decoration: none;
     padding: 0 10px 0 10px;
 }
-.header__links__link:hover{
-    box-shadow: 0 15px 0px -10px var(--color-3);
-}
-
 
 strong{color: var(--color-3);}
 .link-plataformas{color: var(--color-3);text-decoration: none;}

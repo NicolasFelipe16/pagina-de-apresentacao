@@ -42,12 +42,28 @@ body{
     font-weight: 100;
     color: var(--color-3);
     text-decoration: none;
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
+    position: relative;
+    transition: .3s;
 }
 .header__links__link:hover{
-    color: var(--color-2);
+    transform: scale(1.1);
+    color: var(--color-1);
 }
 
+.hover-links{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: var(--color-3);
+    border-radius: 20px;
+    transition: .5s;
+    z-index: -1;
+}
+.header__links__link:hover .hover-links{
+    width: 100%;
+}
 
 spam{color: var(--color-3);}
 .link-plataformas{color: var(--color-3); font-weight: bold;text-decoration: none;}

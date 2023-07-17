@@ -54,6 +54,10 @@ spam{color: var(--color-3);}
 
 .link-plataformas:hover{color: var(--color-2); font-weight: bold;}
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container{
     padding: 0 10% 10%;
     display: flex;

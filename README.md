@@ -5,4 +5,4 @@ Esse é um de meus primeiros projetos um pouco mais elaborados em HTML e CSS. El
 
 Vale pontuar que eu desenvolvi esse projeto e o coloquei no ar com os conhecimentos dos cursos de Front-end da [Alura](https://alura.com.br). Inclusive, recomendo cada um deles.
 
-**Veja o resultado do projeto [aqui](https://pagina-de-apresentacao-gamma.vercel.app/)!**
+**Veja o resultado do projeto [aqui](https://nicolas-felipe.vercel.app/)!**

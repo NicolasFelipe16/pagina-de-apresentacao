@@ -569,10 +569,6 @@ section{
 }
 
 @media screen and (max-width: 900px) {
-    :root{
-        --color-05: red;
-    }
-
     nav ul{
         justify-content: center;
     }

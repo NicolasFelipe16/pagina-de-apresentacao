@@ -582,12 +582,26 @@ section{
 
 @media screen and (max-width: 900px) {
     nav ul{
-        justify-content: center;
+        /* justify-content: center; */
+        padding: 5px;
+    }
+
+    nav{
+        top: calc(100% - 100px);
+        left: 25px;
+        width: calc(100% - 50px);   
     }
 
     nav a{
-        padding: 5px 10px;
+        padding: 5px;
     }
+
+    .link-text{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+
     
     .banner{
         padding: 75px 50px;
@@ -639,26 +653,6 @@ section{
 }
 
 @media screen and (max-width: 740px) {
-    nav{
-        top: calc(100% - 100px);
-        left: 25px;
-        width: calc(100% - 50px);   
-    }
-
-    /* nav ul{
-        flex-wrap: wrap;
-    }
-
-    nav a{
-        padding: 10px 15px;
-    } */
-
-    .link-text{
-        display: flex;
-        flex-direction: column;
-        font-size: 12px;
-    }
-
     .banner__content h1{
         font-size: 60px;
     }

@@ -103,7 +103,7 @@ body::before{
     font-size: 90px;
     color: var(--color-03);
     letter-spacing: 2px;
-    margin: 15px 0;
+    margin: 15px 25px 15px 0;
     animation: text-shadow 2s linear alternate infinite;
 }
 
@@ -169,6 +169,7 @@ nav{
     width: 150px;
     height: min-content;
     border-radius: 25px;
+    z-index: 10;
 }
 
 nav ul{
@@ -184,6 +185,7 @@ nav a{
     border-left: 2px solid var(--color-05);
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    white-space: nowrap;
 }
 
 nav a i{
@@ -196,11 +198,15 @@ nav a:hover{
     background-color: var(--color-05);
 }
 
+
 section{
     margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
 }
 
 .section__content{
+    width: calc(100% - 100px);
     max-width: 1050px;
 }
 
@@ -422,7 +428,8 @@ section{
 
 .projects-list li img{
     width: 250px;
-    height: 200px;
+    min-height: 200px;
+    max-height: 400px;
     object-fit: cover;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -500,6 +507,13 @@ section{
     display: block;
     padding: 50px 0;
     transition: 0s;
+    font-size: 14px;
+}
+
+.contact-list li a p{
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
 }
 
 .contact-list li a i{
@@ -510,5 +524,151 @@ section{
 
 .contact-list li a:hover{
     font-weight: bold;
-    letter-spacing: 2px;
+}
+
+
+@media screen and (max-width: 1080px) {
+    .banner__content h1{
+        font-size: 75px;
+    }
+
+    .banner__image{
+        height: 250px;
+        width: 250px;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    nav{
+        width: calc(100% - 100px);   
+        background-color: var(--color-05);
+    }
+
+    nav ul{
+        gap: 0;
+        justify-content: space-evenly;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    nav a{
+        border: none;
+        text-align: center;
+    }
+
+    nav a:hover{
+        transform: translateY(-5px);
+        background-color: transparent;
+    }
+
+    .formations-list li{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    :root{
+        --color-05: red;
+    }
+
+    nav ul{
+        justify-content: center;
+    }
+
+    nav a{
+        padding: 5px 10px;
+    }
+    
+    .banner{
+        padding: 50px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .banner__content h1,
+    .banner__content .links a{
+        margin: 10px;
+    }
+    
+    .scrolldown-icon{
+        display: none;
+    }
+
+    .skills-container{
+        gap: 25px;
+    }
+
+    .skills-list li{
+        padding: 0 25px;
+    }
+
+    .contact-list{
+        flex-direction: column;
+    }
+
+    .contact-list li:not(:last-child){
+        border: none;
+        border-bottom: 2px solid var(--color-05);
+    }
+
+    .contact-list li a{
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    nav{
+        display: none;
+    }
+
+    .banner__content h1{
+        font-size: 60px;
+    }
+
+    .skills-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .skills-box{
+        width: 80%;
+    }
+
+    .skills-list li{
+        padding: 0 10px;
+    }
+
+    .projects-list{
+        display: flex;
+        gap: 25px;
+        overflow-x: scroll;
+    }
+
+    .projects-list li{
+        width: min-content;
+        flex-direction: column;
+    }
+
+    .projects-list li img{
+        border-radius: 0;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }  
+
+    .projects-list li:hover img{
+        width: 250px;
+    }
+
+    .project-content{
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .project-content a{
+        width: 100%;
+        text-align: center;
+    }
 }

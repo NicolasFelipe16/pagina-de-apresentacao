@@ -604,6 +604,11 @@ section{
         flex-direction: column;
     }
 
+    .contact-list li:first-child,
+    .contact-list li:last-child{
+        border-radius: 0px;
+    }
+
     .contact-list li:not(:last-child){
         border: none;
         border-bottom: 2px solid var(--color-05);

@@ -640,7 +640,17 @@ section{
 
 @media screen and (max-width: 740px) {
     nav{
-        display: none;
+        left: 25px;
+        width: calc(100% - 50px);   
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        grid-area: 10px;
+    }
+
+    nav a{
+        padding: 10px 15px;
     }
 
     .banner__content h1{
